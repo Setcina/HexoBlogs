@@ -5,9 +5,12 @@ tags:
   - React.js
 ---
 ### JSX简介
+我们来观察一下声明的这个变量：
+
 ``` js
-const element = <h1>Hello, world!</h1>;
-``` 
+const element = <h1>Hello, world!</h1>
+```
+
 这种看起来可能有些奇怪的标签语法既不是字符串也不是 HTML。
 <p></p>
 它被称为 JSX， 一种 JavaScript 的语法扩展。 我们推荐在 React 中使用 JSX 来描述用户界面。JSX 乍看起来可能比较像是模版语言，但事实上它完全是在 JavaScript 内部实现的。
@@ -16,6 +19,7 @@ JSX 用来声明 React 当中的元素。我们先来看看 JSX 的基本使用�
 
 ### 在 JSX 中使用表达式
 你可以任意地在 JSX 当中使用 JavaScript 表达式，在 JSX 当中的表达式要包含在大括号里。
+
 ``` js
 function formatName(user) {
   return user.firstName + ' ' + user.lastName;
@@ -35,6 +39,7 @@ ReactDOM.render(
   element,
   document.getElementById('root')
 );
+
 ``` 
 
 ### JSX 本身其实也是一种表达式
@@ -52,10 +57,12 @@ function getGreeting(user) {
 
 ### JSX 属性
 你可以使用引号来定义以字符串为值的属性：
+
 ``` js
 const element = <div tabIndex="0"></div>;
 ```
 也可以使用大括号来定义以 JavaScript 表达式为值的属性：
+
 ``` js
 const element = <img src={user.avatarUrl}></img>;
 ```
@@ -64,10 +71,13 @@ const element = <img src={user.avatarUrl}></img>;
 
 ### JSX 嵌套
 如果 JSX 标签是闭合式的，那么你需要在结尾处用 />, 就好像 XML/HTML 一样：
+
 ``` js
 const element = <img src={user.avatarUrl} />;
 ```
+
 JSX 标签同样可以相互嵌套：
+
 ``` js
 const element = (
   <div>
