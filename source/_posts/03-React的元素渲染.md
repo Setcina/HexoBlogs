@@ -5,7 +5,7 @@ tags:
  - React.js
 ---
 ### 将元素渲染到 DOM 中
-首先我们在一个 HTML 页面中添加一个 id="root" 的 <div>:
+首先我们在一个 HTML 页面中添加一个 id="root" 的:
 ``` js
 <div id="root"></div>
 ```
