@@ -1,5 +1,5 @@
 ---
-title: 09-Reatc中的constructor()和super()到底是什么？
+title: 10-Reatc中的constructor()和super()到底是什么？
 date: 2018-10-09 11:03:57
 tags:
  - React.js

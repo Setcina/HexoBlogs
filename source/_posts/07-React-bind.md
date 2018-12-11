@@ -1,5 +1,5 @@
 ---
-title: 07-React.bind()
+title: 08-React.bind()
 date: 2018-09-27 21:44:35
 tags:
    - React.js
