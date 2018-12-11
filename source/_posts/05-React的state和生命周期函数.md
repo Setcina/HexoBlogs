@@ -1,5 +1,5 @@
 ---
-title: 05-React的state和生命周期函数
+title: 06-React的state和生命周期函数
 date: 2018-10-17 16:50:52
 tags:
   - React.js  
