@@ -235,8 +235,4 @@ const mapStateToProps = state =>({
 export default connect(mapStateToProps,{ fetchPosts })(Post)
 ```
 
-
-
-
-
-
+[https://github.com/Setcina/redux-demo](https://github.com/Setcina/redux-demo)
