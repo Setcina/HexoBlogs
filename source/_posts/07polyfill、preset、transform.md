@@ -37,8 +37,8 @@ npm install babel-plugin-async-to-promises
 
 终端输入  babel src/main.js
 
-
-![image](https://cdn.nlark.com/yuque/0/2019/png/308891/1554429239542-37070d34-6737-4d50-a2d0-1840e2c06f04.png)
+<img src="webpack07-01.png" class="myimage">
+<p></p>
 
 
 解释一：
@@ -96,7 +96,8 @@ npm start
 
 我们可以看到，它会自动给我们添加一些配置
 
-![image](https://cdn.nlark.com/yuque/0/2019/png/308891/1554429299655-ad070f1f-ea71-4c21-8dd1-9bd4ae92728c.png)
+<img src="webpack07-02.png" class="myimage">
+<p></p>
 
 然后，我们可以继续添加一些配置
 
