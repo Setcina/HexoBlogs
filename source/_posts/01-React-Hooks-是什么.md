@@ -42,4 +42,30 @@ function ExampleWithManyStates() {
 function component，我们多数情况都是从父级中把props传入，进行一些页面渲染。我们无法对props进行状态维护以及更新，因为这些操作都是依赖着父级组件的state。那么有了Hook之后，我们可以在function component挂钩React状态和生命周期功能的功能。钩子在类内部不起作用 - 它们允许你在没有类的情况下使用React。
 
 #### useEffect
-订阅或手动更改DOM。我们将这些操作称为“副作用”（或简称为“效果”），因为它们会影响其他组件，并且在渲染过程中无法完成。
+订阅或手动更改DOM。我们将这些操作称为“副作用”（或简称为“效果”），因为它们会影响其他组件，并且在渲染过程中无法完成。它与React类中的componentDidMount，componentDidUpdate和componentWillUnmount 具有相同的用途，但是统一成一个Api中。
+
+``` js
+import React, { useState，useEffect } from 'react';
+
+function Example() {
+  // 声明一个新的叫做 “count” 的 state 变量
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    document.title = `You clicked ${count} times`;
+  }, [count])
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+```
+
+在组件渲染之后，将会执行useEffect，将我们的文档title修改成为"你点击了多少次"，那么我们应该也可以注意到，在useEffect后面，有一个[count]，这个其实是说，在count变更的时候，将会执行useEffect里面的js。这就相当于说，我们告诉了useEffect，我们什么时候需要刷新组件。
+
+
